@@ -1,0 +1,71 @@
+@use '../variables' as v;
+
+
+.footer-container {
+    margin: 50px 0px;
+}
+
+
+.footer {
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.seccion {
+    width: 18%;
+
+    span {
+        font-weight: bold;
+        padding-left: 8px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        li {
+            padding: 8px;
+            border-radius: v.$border-radius;
+            cursor: pointer;
+
+            .redsocial {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                .icono {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 20px;
+                    }
+                }
+
+                .texto {
+                    margin-left: 10px;
+                }
+            }
+
+            &:hover {
+                background-color: v.$color-hover;
+            }
+        }
+    }
+
+    .qr {
+        width: 100%;
+        padding: 8px;
+
+        img {
+            width: 50%;
+        }
+    }
+
+}

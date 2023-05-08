@@ -13,6 +13,8 @@ html {
 
 .container {    
     max-width: v.$max-width;
-    min-width: v.$min-width;
+    //min-width: v.$min-width;
     margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }

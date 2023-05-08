@@ -59,11 +59,25 @@
 
     .categorias, .cesta {
         padding: 8px;
-        border-radius: v.$border-radius-hover;
+        border-radius: v.$border-radius;
         
         &:hover {
             cursor: pointer;
             background-color: v.$color-hover;
         }
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .categorias {
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .categorias {
+        margin-right: 10px !important;
     }
 }
