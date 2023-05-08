@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CestaComponent } from './cesta/cesta.component';
+import { IntroComponent } from './home/intro/intro.component';
+import { OfertasComponent } from './home/ofertas/ofertas.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CestaComponent } from './cesta/cesta.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CestaComponent
+    CestaComponent,
+    IntroComponent,
+    OfertasComponent
   ],
   imports: [
     BrowserModule,

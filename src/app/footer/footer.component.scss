@@ -39,6 +39,11 @@
                 justify-content: flex-start;
                 align-items: center;
 
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+
                 .icono {
                     display: flex;
                     justify-content: center;
@@ -57,6 +62,15 @@
                 background-color: v.$color-hover;
             }
         }
+    }
+
+    #ref {
+        margin-bottom: 16px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
     }
 
     .qr {
