@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use './app/variables' as v;
+
+* {
+    font-family: v.$font;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {    
+    max-width: v.$max-width;
+    min-width: v.$min-width;
+    margin: auto;
+}

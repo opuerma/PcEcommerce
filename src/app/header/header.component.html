@@ -1,0 +1,21 @@
+
+<div class="header-container">
+  <div class="header container">
+
+    <div class="logo" routerLink="">
+      <img src="../../assets/img/logo.png" alt="">
+    </div>
+
+    <div class="botones">
+      <div class="categorias">CATEGORÍAS</div>
+
+      <div class="cesta" (click)="this.serviceCesta.toggleAbrirCesta()">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span class="texto">CESTA</span>
+      </div>      
+    </div>
+
+  </div>
+</div>
+
+<app-cesta *ngIf="this.serviceCesta.getCestaAbierta()"></app-cesta>

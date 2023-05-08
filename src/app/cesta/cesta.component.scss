@@ -1,0 +1,131 @@
+@use '../variables' as v;
+
+
+.fondo {
+    background-color: rgba(0, 0, 0, 0.145);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: cambioColor;
+    animation-duration: 0.3s;
+}
+
+@keyframes cambioColor {
+    from {background-color: rgba(0, 0, 0, 0);}
+    to {background-color: rgba(0, 0, 0, 0.145)}
+}
+
+
+.cesta {
+    background-color: white;
+    box-shadow: 0 6px 8px 0 #00000033, 0 8px 20px 0 #00000030;;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rightToLeft 0.3s ease-out;
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(450px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.cesta-container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .titulo {
+        font-weight: bold;
+    }
+
+    .cerrar {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: v.$border-radius-hover;
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 700,
+            'GRAD' 0,
+            'opsz' 48
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: v.$color-hover;
+        }
+    }
+}
+
+
+.cesta-vacia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .cesta-vacia-img {
+        width: 50%;
+        margin: 30px 0px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .texto {
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    
+
+    .boton {
+        width: 80%;
+        height: 50px;
+        background-color: v.$color-naranja;
+        color: white;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: v.$border-radius-hover;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+            background-color: v.$color-naranja-hover;
+        }
+    }
+}

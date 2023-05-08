@@ -1,0 +1,36 @@
+<div class="fondo" (click)="animacionCerrarCesta()" [@cambioColor]="state">
+
+</div>
+
+<div class="cesta" [@leftToRight]="state" (@leftToRight.done)="onAnimationDone($event)">
+
+    <div class="cesta-container">
+
+        <div class="header">
+            <div class="titulo">Mi cesta</div>
+            <div class="cerrar" (click)="animacionCerrarCesta()">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+
+        <div class="contenido" *ngIf="this.articulosCesta.length">
+            <div class="producto" *ngFor="let producto of articulosCesta">
+                {{ producto }}
+            </div>
+        </div>
+
+        <div class="cesta-vacia" *ngIf="!this.articulosCesta.length">
+            <div class="cesta-vacia-img">
+                <img src="../../assets/img/empty-cart.png" alt="">
+            </div>
+            <div class="texto">
+                <span>Tu carrito está vacío</span>
+            </div>
+            <div class="boton" (click)="animacionCerrarCesta()">
+                <span>Explorar artículos</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
