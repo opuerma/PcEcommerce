@@ -1,8 +1,24 @@
 @use '../variables' as v;
 
 
+app-cesta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+
 .header-container {
+    background-color: white;
     border-bottom: 1px solid v.$color-lineas;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 
@@ -16,6 +32,7 @@
 
 
 .logo {
+    position: sticky;
     width: 90px;
     display: flex;
     justify-content: center;

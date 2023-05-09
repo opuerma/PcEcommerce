@@ -3,7 +3,7 @@
 
 .fondo {
     background-color: rgba(0, 0, 0, 0.145);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -21,7 +21,7 @@
 .cesta {
     background-color: white;
     box-shadow: 0 6px 8px 0 #00000033, 0 8px 20px 0 #00000030;;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 450px;

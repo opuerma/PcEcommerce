@@ -1,9 +1,7 @@
 export interface Producto {    
-    marca: string;
-    modelo: string;
-    autonomia: number;
-    puertas: number;
-    cajaCambios: boolean;
+    nombre: string;
     precio: number;
-    descripcion: string;
+    descuento?: number;
+    estrellitas: number;
+    cantidadValoraciones: number;
 }
