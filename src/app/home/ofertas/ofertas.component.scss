@@ -31,7 +31,7 @@
     }
 
     .boton {
-        padding: 15px 20px;
+        padding: 15px 25px;
         background-color: v.$color-naranja;
         border-radius: v.$border-radius;
         cursor: pointer;
@@ -47,15 +47,15 @@
 
 .productos {
     width: 65%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: auto;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: flex-start;
+    //align-items: center;
+    //overflow-x: auto;
 
     .carta {
-        width: 250px;
-        height: 300px;
+        width: 100%; // 100% porqué lo modificamos
+        height: 100%; // en el Carousel en el HTML
         border-radius: v.$border-radius;
         background-color: white;
         cursor: pointer;
@@ -63,8 +63,8 @@
         justify-content: center;
         align-items: center;
         font-size: medium;
-        margin-left: 30px;
-        &:first-child { margin-left: 0; }
+        //margin-left: 30px;
+        //&:first-child { margin-left: 0; }
 
         .producto-container {
             width: 90%;
@@ -87,7 +87,7 @@
 
             .imagen {
                 width: 100%;
-                height: 150px;
+                height: 160px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -143,6 +143,8 @@
                     color: #FFA90D;
 
                     .material-symbols-outlined {
+                        margin-left: -8px;
+                        &:first-child { margin-left: -4px; }
                         font-variation-settings:
                         'FILL' 1,
                         'wght' 200,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductosService } from 'src/app/productos.service';
 
 @Component({
   selector: 'app-ofertas',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./ofertas.component.scss']
 })
 export class OfertasComponent {
+
+  categorias: string[] = [];
+
+  constructor(public serviceProductos: ProductosService) {
+    this.categorias = this.serviceProductos.getCategorias();
+
+    
+  }
 
 }
