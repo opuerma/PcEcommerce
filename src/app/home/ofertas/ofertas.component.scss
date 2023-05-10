@@ -47,6 +47,7 @@
 
 .productos {
     width: 65%;
+    overflow-x: hidden;
     //display: flex;
     //flex-direction: row;
     //justify-content: flex-start;
@@ -163,6 +164,10 @@
     }
 }
 
+.carousel-cells {
+    overflow-x: hidden;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .ofertas {
@@ -170,7 +175,6 @@
         align-items: center;
     }
     .presentacion {
-        outline: 1px dashed black;
         width: 100%;
         margin-bottom: 50px;
         justify-content: flex-start;
