@@ -1,5 +1,6 @@
 
 <div class="footer-container">
+
     <div class="footer container">
 
         <div class="seccion">
@@ -129,4 +130,160 @@
         </div>
 
     </div>
+
+    <div class="footer-small container">
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="titulo-seccion">
+                    <mat-panel-title>
+                        Por qué comprar
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>Cómo comprar</li>
+                    <li>Formas de pago</li>
+                    <li>Gastos de envío</li>
+                    <li>Cupones descuento</li>
+                    <li>Preguntas frequentes</li>
+                    <li>Opiniones de clientes</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="titulo-seccion">
+                    <mat-panel-title>
+                        Quiénes somos
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>Quiénes somos</li>
+                    <li>Compromisos</li>
+                    <li>Nuestras tiendas</li>
+                    <li>Condiciones de compra</li>
+                    <li>Afiliados</li>
+                    <li>Aviso legal</li>
+                    <li>Privacidad</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="titulo-seccion">
+                    <mat-panel-title>
+                        Contactar
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>Centro de soporte</li>
+                    <li>Contacto</li>
+                    <li>Devoluciones</li>
+                    <li>Garantías</li>
+                    <li>Publicidad</li>
+                    <li>Trabaja con nosotros</li>
+                    <li>Política de cookies</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="titulo-seccion">
+                    <mat-panel-title>
+                        Comunidad
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li>
+                        <div class="redsocial">
+                            <div class="icono">
+                                <img src="../../assets/img/icons/instagram_icon.svg" alt="">
+                            </div>
+                            <div class="texto">Instagram</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="redsocial">
+                            <div class="icono">
+                                <img src="../../assets/img/icons/twitter_icon.svg" alt="">
+                            </div>
+                            <div class="texto">Twitter</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="redsocial">
+                            <div class="icono">
+                                <img src="../../assets/img/icons/facebook_icon.svg" alt="">
+                            </div>
+                            <div class="texto">Facebook</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="redsocial">
+                            <div class="icono">
+                                <img src="../../assets/img/icons/telegram_icon.svg" alt="">
+                            </div>
+                            <div class="texto">Telegram</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="redsocial">
+                            <div class="icono">
+                                <img src="../../assets/img/icons/youtube_icon.svg" alt="">
+                            </div>
+                            <div class="texto">Youtube</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="redsocial">
+                            <div class="icono">
+                                <img src="../../assets/img/icons/tiktok_icon.svg" alt="">
+                            </div>
+                            <div class="texto">TikTok</div>
+                        </div>
+                    </li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <div class="app-footer-small">
+            <span>Diseño</span>
+            <ul>
+                <a href="https://www.pccomponentes.com/"><li>
+                    <div class="redsocial">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" fill="inherit" data-testid="link-icon" class="sc-jrAFXE dqugkO"><path d="M21.974 5.811v12.232c.151 3.264-4.177 5.352-7.211 5.864-2.098.36-4.083-.399-5.33-1.044L.68 18.29c-.226-.151-.68-.417-.68-1.347V4.483c0-1.689 1.701-.598 2.987-.104l6.606 2.77c1.531.665 3.761 1.538 5.529 1.367 3.856-.351 6.852-2.705 6.852-2.705z"></path><path d="M13.81 6.048c1.283.31 3.142-.311 4.816-1.448.474-.282.436-.981-.726-1.487C15.912 2.25 12.529.772 12.529.772 11.04.12 9.71-.676 9.71.995v3.42s3.263 1.429 4.1 1.633z"></path></svg>
+                        <div class="texto">pccomponentes.com</div>
+                    </div>
+                </li></a>
+            </ul>
+            <span>Descarga nuestra App</span>
+            <ul>
+                <li>
+                    <div class="redsocial">
+                        <div class="icono">
+                            <img src="../../assets/img/icons/android_icon.svg" alt="">
+                        </div>
+                        <div class="texto">Descarga app Google Play</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="redsocial">
+                        <div class="icono">
+                            <img src="../../assets/img/icons/apple_icon.svg" alt="">
+                        </div>
+                        <div class="texto">Descarga app en App Store</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
 </div>
