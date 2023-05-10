@@ -1,0 +1,60 @@
+<div class="recomendaciones-container">
+    <div class="recomendaciones container">
+
+        <div class="h1">Seguro que te interesa</div>
+
+        <div class="productos">
+            <carousel 
+            [height]="310"
+            [cellWidth]="240"
+            [arrowsTheme]="'dark'">
+                <div class="carta carousel-cell" *ngFor="let producto of productos">
+                    
+                    <div class="producto-container">
+    
+                        <div class="seccion-1">
+                            <div class="descuento">
+                                <span>-{{ producto.descuento }}%</span>
+                            </div>
+                            <div class="imagen">
+                                <img src="../../../assets/img/categorias/Smartphones/{{ producto.nombreImagen }}.jpg" alt="">
+                            </div>
+                            <div class="nombre">
+                                <span>{{ producto.nombre }}</span>
+                            </div>
+                        </div>
+    
+                        <div class="seccion-2">
+                            <div class="precio">
+                                <div class="precio-nuevo">
+                                    {{ this.serviceFunciones.formatearNumero(producto.precioFinal) }}€
+                                </div>
+                                <div class="precio-viejo">
+                                    PVP <span>{{ this.serviceFunciones.formatearNumero(producto.precioOriginal) }}€</span>
+                                </div>
+                            </div>
+                            <div class="valoracion">
+                                <div class="estrellas">
+                                    <span
+                                        class="material-symbols-outlined" 
+                                        *ngFor="let i of this.serviceFunciones.getIteraciones(this.serviceFunciones.truncarNumero(producto.estrellitas))">star</span>
+                                    <span
+                                        class="material-symbols-outlined"
+                                        *ngIf="this.serviceFunciones.tieneDecimales(producto.estrellitas)">star_half</span>
+                                    <span
+                                        class="material-symbols-outlined icon-no-fill"
+                                        *ngFor="let _ of this.serviceFunciones.getIteraciones(5 - this.serviceFunciones.truncarNumero(producto.estrellitas) - (this.serviceFunciones.tieneDecimales(producto.estrellitas) ? 1 : 0))">
+                                        star</span>
+                                </div>
+                                <div class="valoraciones">({{ producto.cantidadValoraciones }})</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </carousel>
+        </div>
+
+    </div>
+</div>

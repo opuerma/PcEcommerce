@@ -1,0 +1,92 @@
+[
+    {
+        "nombre": "Samsung Galaxy M13 4/64GB Verde Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 149,
+        "precioOriginal": 209,
+        "descuento": 28,
+        "estrellitas": 4,
+        "cantidadValoraciones": 122,
+        "nombreImagen": "Samsung Galaxy M13"
+    },
+    {
+        "nombre": "Realme C55 8/256GB Rainy Night Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 199,
+        "precioOriginal": 229,
+        "descuento": 13,
+        "estrellitas": 5,
+        "cantidadValoraciones": 50,
+        "nombreImagen": "Realme C55"
+    },
+    {
+        "nombre": "Samsung Galaxy M33 5G 6/128GB Azul Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 233.95,
+        "precioOriginal": 289,
+        "descuento": 19,
+        "estrellitas": 4.5,
+        "cantidadValoraciones": 16,
+        "nombreImagen": "Samsung Galaxy M33"
+    },
+    {
+        "nombre": "Realme Narzo 50A Prime FHD+ 4/64GB Azul Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 118.95,
+        "precioOriginal": 169,
+        "descuento": 29,
+        "estrellitas": 4.5,
+        "cantidadValoraciones": 85,
+        "nombreImagen": "Realme Narzo 50A Prime"
+    },
+    {
+        "nombre": "Samsung Galaxy M23 5G 4/128GB Oro Rosa Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 188.95,
+        "precioOriginal": 319,
+        "descuento": 40,
+        "estrellitas": 4,
+        "cantidadValoraciones": 75,
+        "nombreImagen": "Samsung Galaxy M23"
+    },
+    {
+        "nombre": "Realme Narzo 50i Prime 3/32GB Azul Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 79,
+        "precioOriginal": 139,
+        "descuento": 43,
+        "estrellitas": 3.5,
+        "cantidadValoraciones": 17,
+        "nombreImagen": "Realme Narzo 50i Prime"
+    },
+    {
+        "nombre": "Realme GT2 12/256GB Blanco Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 399,
+        "precioOriginal": 599,
+        "descuento": 33,
+        "estrellitas": 4.5,
+        "cantidadValoraciones": 33,
+        "nombreImagen": "Realme GT2"
+    },
+    {
+        "nombre": "Realme 10 AMOLED FHD+ 8/128GB Blanco Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 219,
+        "precioOriginal": 272,
+        "descuento": 19,
+        "estrellitas": 4,
+        "cantidadValoraciones": 5,
+        "nombreImagen": "Realme 10 AMOLED"
+    },
+    {
+        "nombre": "Realme C31 4/64GB Plata Libre",
+        "categoria": "Smartphones",
+        "precioFinal": 109,
+        "precioOriginal": 165.99,
+        "descuento": 34,
+        "estrellitas": 4,
+        "cantidadValoraciones": 29,
+        "nombreImagen": "Realme C31"
+    }
+]

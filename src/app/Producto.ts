@@ -1,8 +1,10 @@
 export interface Producto {    
     nombre: string;
     categoria: string;
-    precio: number;
-    descuento?: number;
+    precioFinal: number;
+    precioOriginal: number;
+    descuento: number;
     estrellitas: number;
     cantidadValoraciones: number;
+    nombreImagen: string;
 }

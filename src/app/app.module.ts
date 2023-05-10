@@ -2,6 +2,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { IvyCarouselModule } from 'angular-responsive-carousel3';
 import { MatExpansionModule } from '@angular/material/expansion';
 
@@ -12,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CestaComponent } from './cesta/cesta.component';
 import { IntroComponent } from './home/intro/intro.component';
 import { OfertasComponent } from './home/ofertas/ofertas.component';
+import { RecomendacionesComponent } from './home/recomendaciones/recomendaciones.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { OfertasComponent } from './home/ofertas/ofertas.component';
     FooterComponent,
     CestaComponent,
     IntroComponent,
-    OfertasComponent
+    OfertasComponent,
+    RecomendacionesComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatExpansionModule,
     IvyCarouselModule
   ],
