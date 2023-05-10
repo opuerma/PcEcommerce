@@ -47,7 +47,6 @@
 
 .productos {
     width: 65%;
-    overflow-x: hidden;
     //display: flex;
     //flex-direction: row;
     //justify-content: flex-start;
@@ -162,10 +161,6 @@
             }
         }
     }
-}
-
-.carousel-cells {
-    overflow-x: hidden;
 }
 
 
