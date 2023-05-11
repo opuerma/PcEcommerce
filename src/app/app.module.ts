@@ -15,6 +15,7 @@ import { IntroComponent } from './home/intro/intro.component';
 import { OfertasComponent } from './home/ofertas/ofertas.component';
 import { RecomendacionesComponent } from './home/recomendaciones/recomendaciones.component';
 import { BlogComponent } from './home/blog/blog.component';
+import { SorteoComponent } from './sorteo/sorteo.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BlogComponent } from './home/blog/blog.component';
     IntroComponent,
     OfertasComponent,
     RecomendacionesComponent,
-    BlogComponent
+    BlogComponent,
+    SorteoComponent
   ],
   imports: [
     AppRoutingModule,
