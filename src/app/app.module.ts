@@ -14,6 +14,7 @@ import { CestaComponent } from './cesta/cesta.component';
 import { IntroComponent } from './home/intro/intro.component';
 import { OfertasComponent } from './home/ofertas/ofertas.component';
 import { RecomendacionesComponent } from './home/recomendaciones/recomendaciones.component';
+import { BlogComponent } from './home/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RecomendacionesComponent } from './home/recomendaciones/recomendaciones
     CestaComponent,
     IntroComponent,
     OfertasComponent,
-    RecomendacionesComponent
+    RecomendacionesComponent,
+    BlogComponent
   ],
   imports: [
     AppRoutingModule,
