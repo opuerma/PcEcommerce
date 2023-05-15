@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Producto } from 'src/app/Producto';
 import { FuncionesGeneralesService } from 'src/app/funciones-generales.service';
 import { ProductosService } from 'src/app/productos.service';
@@ -24,6 +25,7 @@ export class RecomendacionesComponent implements OnInit {
 
   async ngOnInit() {
     this.productos = await this.serviceProductos.getProductos();
+    this.productos.sort(() => Math.random() - 0.5);
   }
 
 

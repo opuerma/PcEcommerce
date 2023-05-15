@@ -1,4 +1,5 @@
-export interface Producto {    
+export interface Producto {
+    id: number;
     nombre: string;
     categoria: string;
     precioFinal: number;
@@ -7,4 +8,5 @@ export interface Producto {
     estrellitas: number;
     cantidadValoraciones: number;
     nombreImagen: string;
+    descripcion: string;
 }

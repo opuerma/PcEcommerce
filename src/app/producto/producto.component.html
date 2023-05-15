@@ -1,0 +1,72 @@
+<div class="producto-container">
+    <div class="producto container">
+
+        <div class="producto-actual">
+            <div class="imagen">
+                <img src="../../assets/img/categorias/{{this.producto?.categoria}}/{{this.producto?.nombreImagen}}.jpg" alt="{{this.producto?.nombreImagen}}">
+            </div>
+            <div class="descripcion">
+
+                <div class="nombre h1 item">{{this.producto?.nombre}}</div>
+
+                <div class="precio item">
+                    <div class="precio-final item-precio">
+                        {{ this.serviceFunciones.formatearNumero(producto!.precioFinal) }}€
+                    </div>
+                    <div class="precio-original-container item-precio">
+                        <div class="texto-pequeno">PVPR</div>
+                        <div class="precio-original">
+                            {{ this.serviceFunciones.formatearNumero(producto!.precioOriginal) }}€
+                        </div>
+                    </div>
+                    <div class="descuento-container item-precio">
+                        <div class="texto-pequeno">DTO.</div>
+                        <div class="descuento">-{{this.producto?.descuento}}%</div>
+                    </div>
+                </div>
+
+                <div class="valoracion item">
+                    <div class="estrellas">
+                        <span
+                            class="material-symbols-outlined" 
+                            *ngFor="let i of this.serviceFunciones.getIteraciones(this.serviceFunciones.truncarNumero(this.producto!.estrellitas))">star</span>
+                        <span
+                            class="material-symbols-outlined"
+                            *ngIf="this.serviceFunciones.tieneDecimales(this.producto!.estrellitas)">star_half</span>
+                        <span
+                            class="material-symbols-outlined icon-no-fill"
+                            *ngFor="let _ of this.serviceFunciones.getIteraciones(5 - this.serviceFunciones.truncarNumero(this.producto!.estrellitas) - (this.serviceFunciones.tieneDecimales(this.producto!.estrellitas) ? 1 : 0))">
+                            star</span>
+                    </div>
+                    <div class="valoraciones">({{ this.producto?.cantidadValoraciones }})</div>
+                </div>
+
+                <div class="descripcion-producto item">{{ this.producto?.descripcion }}</div>
+
+                <div class="cantidad-container item">
+                    <div class="cantidad-texto">Cantidad:</div>
+                    <div class="cantidad">
+                        <div class="boton-menos-mas" (click)="restarCantidad()">
+                            <span class="material-symbols-outlined">remove</span>
+                        </div>
+                        <div class="numero">{{ this.cantidad }}</div>
+                        <div class="boton-menos-mas" (click)="sumarCantidad()">
+                            <span class="material-symbols-outlined">add</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boton-cesta item">
+                    <span class="material-symbols-outlined">add_shopping_cart</span>
+                    Añadir a la cesta
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<app-recomendaciones></app-recomendaciones>
+
+<app-sorteo></app-sorteo>

@@ -16,6 +16,9 @@ import { OfertasComponent } from './home/ofertas/ofertas.component';
 import { RecomendacionesComponent } from './home/recomendaciones/recomendaciones.component';
 import { BlogComponent } from './home/blog/blog.component';
 import { SorteoComponent } from './sorteo/sorteo.component';
+import { ProductoComponent } from './producto/producto.component';
+import { RouteReuseStrategy } from '@angular/router';
+import { EstrategiaRouteReuse } from './EstrategiaRouteReuse';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { SorteoComponent } from './sorteo/sorteo.component';
     OfertasComponent,
     RecomendacionesComponent,
     BlogComponent,
-    SorteoComponent
+    SorteoComponent,
+    ProductoComponent
   ],
   imports: [
     AppRoutingModule,
@@ -38,7 +42,12 @@ import { SorteoComponent } from './sorteo/sorteo.component';
     MatExpansionModule,
     IvyCarouselModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: RouteReuseStrategy,
+      useClass: EstrategiaRouteReuse
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

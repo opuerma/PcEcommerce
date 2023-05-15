@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "nombre": "Samsung Galaxy M13 4/64GB Verde Libre",
         "categoria": "Smartphones",
         "precioFinal": 149,
@@ -7,9 +8,11 @@
         "descuento": 28,
         "estrellitas": 4,
         "cantidadValoraciones": 122,
-        "nombreImagen": "Samsung Galaxy M13"
+        "nombreImagen": "Samsung Galaxy M13",
+        "descripcion": "Samsung Galaxy M13 combina un procesador Exynos 850 (8nm) Octa-core de 2.0GHz con una memoria RAM de 4 GB para que puedas disfrutar con mayor eficiencia tus aplicaciones y videojuegos."
     },
     {
+        "id": 1,
         "nombre": "Realme C55 8/256GB Rainy Night Libre",
         "categoria": "Smartphones",
         "precioFinal": 199,
@@ -17,9 +20,11 @@
         "descuento": 13,
         "estrellitas": 5,
         "cantidadValoraciones": 50,
-        "nombreImagen": "Realme C55"
+        "nombreImagen": "Realme C55",
+        "descripcion": "El realme C55 es un teléfono inteligente que cuenta con una serie de características y especificaciones impresionantes. Desde su cámara de alta calidad hasta su carga rápida y gran cantidad de memoria, este teléfono es una excelente opción para cualquier usuario que busque un dispositivo de alta calidad que les permita realizar una amplia variedad de tareas y funciones."
     },
     {
+        "id": 2,
         "nombre": "Samsung Galaxy M33 5G 6/128GB Azul Libre",
         "categoria": "Smartphones",
         "precioFinal": 233.95,
@@ -27,9 +32,11 @@
         "descuento": 19,
         "estrellitas": 4.5,
         "cantidadValoraciones": 16,
-        "nombreImagen": "Samsung Galaxy M33"
+        "nombreImagen": "Samsung Galaxy M33",
+        "descripcion": "Vive una experiencia totalmente nueva al usar tu smartphone Galaxy M33 5G. Gracias a la potencia de la nueva generación de velocidad de datos 5G, podrás disfrutar de juegos y streaming súper fluidos, hasta compartir y descargar de forma ultrarrápida"
     },
     {
+        "id": 3,
         "nombre": "Realme Narzo 50A Prime FHD+ 4/64GB Azul Libre",
         "categoria": "Smartphones",
         "precioFinal": 118.95,
@@ -37,9 +44,11 @@
         "descuento": 29,
         "estrellitas": 4.5,
         "cantidadValoraciones": 85,
-        "nombreImagen": "Realme Narzo 50A Prime"
+        "nombreImagen": "Realme Narzo 50A Prime",
+        "descripcion": "Juegos inmersivos con detalles vivos. Gracias a una gran pantalla de 6,6 pulgadas y una resolución de hasta 2408 x 1080, podrás ver claramente todos los movimientos de tu oponente en la escena del juego, comprender enseguida la situación del juego y atacar rápidamente."
     },
     {
+        "id": 4,
         "nombre": "Samsung Galaxy M23 5G 4/128GB Oro Rosa Libre",
         "categoria": "Smartphones",
         "precioFinal": 188.95,
@@ -47,19 +56,23 @@
         "descuento": 40,
         "estrellitas": 4,
         "cantidadValoraciones": 75,
-        "nombreImagen": "Samsung Galaxy M23"
+        "nombreImagen": "Samsung Galaxy M23",
+        "descripcion": "Galaxy M23 5G ofrece un rendimiento asombroso con conectividad 5G, un potente procesador, junto con una cámara de alta resolución de 50 megapíxeles y la pantalla de 6,6\" FHD+ de 120 Hz. Y, a pesar de ser un smartphone sobresaliente, es uno de los Galaxy más accesibles."
     },
     {
+        "id": 5,
         "nombre": "Realme Narzo 50i Prime 3/32GB Azul Libre",
         "categoria": "Smartphones",
-        "precioFinal": 79,
+        "precioFinal": 78.95,
         "precioOriginal": 139,
         "descuento": 43,
         "estrellitas": 3.5,
         "cantidadValoraciones": 17,
-        "nombreImagen": "Realme Narzo 50i Prime"
+        "nombreImagen": "Realme Narzo 50i Prime",
+        "descripcion": "Procesador de ocho núcleos Unisoc, diseño de rayas verticales 8,5mm ultrafino, gran batería de 5000mAh, pantalla de 6,5\" (16,5 cm), memoria externa de hasta 1TB y ranura para 3 tarjetas."
     },
     {
+        "id": 6,
         "nombre": "Realme GT2 12/256GB Blanco Libre",
         "categoria": "Smartphones",
         "precioFinal": 399,
@@ -67,9 +80,11 @@
         "descuento": 33,
         "estrellitas": 4.5,
         "cantidadValoraciones": 33,
-        "nombreImagen": "Realme GT2"
+        "nombreImagen": "Realme GT2",
+        "descripcion": "Más grande de lo que ves. Pantalla AMOLED E4 de 120 Hz ultrafluida, procesador Qualcomm Snapdragon 888 5G y el primer smartphone del mundo con diseño de biopolímero."
     },
     {
+        "id": 7,
         "nombre": "Realme 10 AMOLED FHD+ 8/128GB Blanco Libre",
         "categoria": "Smartphones",
         "precioFinal": 219,
@@ -77,9 +92,11 @@
         "descuento": 19,
         "estrellitas": 4,
         "cantidadValoraciones": 5,
-        "nombreImagen": "Realme 10 AMOLED"
+        "nombreImagen": "Realme 10 AMOLED",
+        "descripcion": "Realme 10 con chipset MediaTek Helio G99 de 8 núcleos, 8+128GB, pantalla Super AMOLED de 6,4\" y 90H, cámara principal IA de 50MP, y sistema operativo realme UI 3.0 basado en Android 12."
     },
     {
+        "id": 8,
         "nombre": "Realme C31 4/64GB Plata Libre",
         "categoria": "Smartphones",
         "precioFinal": 109,
@@ -87,6 +104,7 @@
         "descuento": 34,
         "estrellitas": 4,
         "cantidadValoraciones": 29,
-        "nombreImagen": "Realme C31"
+        "nombreImagen": "Realme C31",
+        "descripcion": "Realme C31 es el teléfono más elegante del segmento con diseño de textura dinámica ultradelgada de tan solo 8,4 mm, que combina una experiencia visual con una sensación cómoda."
     }
 ]

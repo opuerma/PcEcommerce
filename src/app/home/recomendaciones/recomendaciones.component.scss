@@ -89,7 +89,7 @@
                 }
 
                 .precio-viejo {
-                    color: #737373;
+                    color: v.$color-precio-gris-clarito;
                     padding: 0;
                     margin: 0;
                     margin-left: 10px;
@@ -105,13 +105,13 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
-                align-items: flex-end;
+                align-items: center;
 
                 .estrellas {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: #FFA90D;
+                    color: v.$color-estrellitas;
 
                     .material-symbols-outlined {
                         margin-left: -8px;
