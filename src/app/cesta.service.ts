@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Producto } from './Producto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CestaService {
   cestaAbierta: boolean = false;
-  articulosCesta: string[] = [];
+  articulosCesta: Producto[] = [];
 
   constructor() { }
 
@@ -19,11 +20,11 @@ export class CestaService {
   }
 
 
-  addArticuloCesta(producto: string): void {
+  addArticuloCesta(producto: Producto): void {
     this.articulosCesta.push(producto);
   }
 
-  getArticulosCesta(): string[] {
+  getArticulosCesta(): Producto[] {
     return this.articulosCesta;
   }
 

@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CestaService } from '../cesta.service';
 import { trigger, state, style, animate, transition, AnimationEvent, keyframes } from '@angular/animations';
+import { Producto } from '../Producto';
+import { FuncionesGeneralesService } from '../funciones-generales.service';
 
 
 const leftToRight = trigger('leftToRight', [
@@ -32,17 +34,30 @@ const cambioColor = trigger('cambioColor', [
 })
 export class CestaComponent {
   @ViewChild('fondo', { static: true }) fondo!: ElementRef;
-  articulosCesta: string[] = [];
+  articulosCesta: Producto[] = [];
   state: string = 'start';
   isAnimationDone: boolean = false;
 
-  constructor (public serviceCesta: CestaService) {
+  constructor (public serviceCesta: CestaService, public serviceFunciones: FuncionesGeneralesService) {
     this.articulosCesta = this.serviceCesta.getArticulosCesta();  
   }
+
+
+  getPrecioTotal(): string {
+    let precioTotal = 0;
+
+    for (const producto of this.articulosCesta) {
+      precioTotal += producto.precioFinal;
+    }
+
+    return this.serviceFunciones.formatearNumero(precioTotal);
+  }
+
 
   animacionCerrarCesta() {
     this.state = this.state === 'start' ? 'end' : 'start';
   }
+
 
   onAnimationDone(event: AnimationEvent) {
     if (event.toState === 'end') {
@@ -50,5 +65,7 @@ export class CestaComponent {
       this.serviceCesta.toggleAbrirCesta();
     }
   }
+
+
 
 }

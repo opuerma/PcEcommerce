@@ -3,6 +3,7 @@ import { ProductosService } from '../productos.service';
 import { Producto } from '../Producto';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FuncionesGeneralesService } from '../funciones-generales.service';
+import { CestaService } from '../cesta.service';
 
 @Component({
   selector: 'app-producto',
@@ -17,9 +18,10 @@ export class ProductoComponent implements OnInit {
 
   constructor(
     private serviceProductos: ProductosService,
-    public serviceFunciones: FuncionesGeneralesService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private serviceCesta: CestaService,
+    public serviceFunciones: FuncionesGeneralesService
     ) { }
 
 
@@ -57,6 +59,14 @@ export class ProductoComponent implements OnInit {
       this.cantidad --;
     }
   }
+
+
+  comprobarCantidadYAnadirCesta(): void {
+    for (let i = 0; i < this.cantidad; i++) {
+      this.serviceCesta.addArticuloCesta(this.producto!);
+    }
+  }
+  
 
 
 

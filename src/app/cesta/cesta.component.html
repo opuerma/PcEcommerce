@@ -14,9 +14,27 @@
         </div>
 
         <div class="contenido" *ngIf="this.articulosCesta.length">
-            <div class="producto" *ngFor="let producto of articulosCesta">
-                {{ producto }}
+            <div class="productos-container">
+                <div class="carta-producto" *ngFor="let producto of articulosCesta">
+                    <div class="producto">
+                        <div class="imagen">
+                            <img src="../../assets/img/categorias/{{producto.categoria}}/{{producto.nombreImagen}}.jpg" alt="">
+                        </div>
+                        <div class="descripcion">
+                            <div class="nombre item-descripcion">{{ producto.nombre }}</div>
+                            <div class="unidades item-descripcion">Unidades 1</div>
+                            <div class="precio item-descripcion">{{ this.serviceFunciones.formatearNumero(producto.precioFinal) }}€</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="total-unidades">
+                <div>Unidades</div><div>{{ articulosCesta.length }}</div>
+            </div>
+            <div class="total-precio">
+                <div>Total <span>(IVA incluido)</span></div><div>{{ getPrecioTotal() }}€</div>
+            </div>
+            <div class="boton">Comprar</div>
         </div>
 
         <div class="cesta-vacia" *ngIf="!this.articulosCesta.length">
