@@ -199,7 +199,8 @@
 
 
 .boton-cesta {
-    padding: 15px 30px;
+    padding: 15px 0px;
+    width: 300px;
     background-color: v.$color-naranja;
     border-radius: v.$border-radius;
     cursor: pointer;
@@ -236,6 +237,9 @@
     .descripcion {
         width: 100%;
         margin-top: 50px;
+    }
+    .boton-cesta {
+        width: 100%;
     }
 }
 
