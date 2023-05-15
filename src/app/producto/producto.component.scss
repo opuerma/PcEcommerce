@@ -10,7 +10,7 @@
 .producto-actual {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
@@ -28,7 +28,7 @@
 
 
 .descripcion {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,5 +219,44 @@
         'wght' 400,
         'GRAD' 0,
         'opsz' 48
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .producto-actual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen {
+        width: 80%;
+    }
+    .descripcion {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .imagen {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .imagen {
+        width: 90%;
+    }
+    .precio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .item-precio {
+        margin-left: 0px !important;
+        margin-bottom: 10px;
     }
 }
