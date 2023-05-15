@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { IvyCarouselModule } from 'angular-responsive-carousel3';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -19,6 +20,9 @@ import { SorteoComponent } from './sorteo/sorteo.component';
 import { ProductoComponent } from './producto/producto.component';
 import { RouteReuseStrategy } from '@angular/router';
 import { EstrategiaRouteReuse } from './EstrategiaRouteReuse';
+import { CestaService } from './cesta.service';
+import { FuncionesGeneralesService } from './funciones-generales.service';
+import { ProductosService } from './productos.service';
 
 @NgModule({
   declarations: [
@@ -43,10 +47,11 @@ import { EstrategiaRouteReuse } from './EstrategiaRouteReuse';
     IvyCarouselModule
   ],
   providers: [
-    {
-      provide: RouteReuseStrategy,
-      useClass: EstrategiaRouteReuse
-    }
+    { provide: RouteReuseStrategy, useClass: EstrategiaRouteReuse },
+    CestaService,
+    FuncionesGeneralesService,
+    ProductosService,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })

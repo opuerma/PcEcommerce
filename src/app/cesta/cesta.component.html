@@ -25,16 +25,20 @@
                             <div class="unidades item-descripcion">Unidades 1</div>
                             <div class="precio item-descripcion">{{ this.serviceFunciones.formatearNumero(producto.precioFinal) }}€</div>
                         </div>
+                        <div class="eliminar">
+                            <span class="material-symbols-outlined" (click)="this.serviceCesta.deleteCesta()">close</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="linea"></div>
             <div class="total-unidades">
                 <div>Unidades</div><div>{{ articulosCesta.length }}</div>
             </div>
             <div class="total-precio">
                 <div>Total <span>(IVA incluido)</span></div><div>{{ getPrecioTotal() }}€</div>
             </div>
-            <div class="boton">Comprar</div>
+            <div class="boton boton-cesta">Comprar</div>
         </div>
 
         <div class="cesta-vacia" *ngIf="!this.articulosCesta.length">

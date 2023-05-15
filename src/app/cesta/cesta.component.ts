@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CestaService } from '../cesta.service';
-import { trigger, state, style, animate, transition, AnimationEvent, keyframes } from '@angular/animations';
+import { trigger, state, style, animate, transition, AnimationEvent } from '@angular/animations';
 import { Producto } from '../Producto';
 import { FuncionesGeneralesService } from '../funciones-generales.service';
 
@@ -38,8 +38,11 @@ export class CestaComponent {
   state: string = 'start';
   isAnimationDone: boolean = false;
 
-  constructor (public serviceCesta: CestaService, public serviceFunciones: FuncionesGeneralesService) {
-    this.articulosCesta = this.serviceCesta.getArticulosCesta();  
+  constructor (
+    public serviceCesta: CestaService,
+    public serviceFunciones: FuncionesGeneralesService
+  ) {
+    this.articulosCesta = this.serviceCesta.getArticulosCesta();
   }
 
 
