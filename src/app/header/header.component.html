@@ -10,8 +10,13 @@
       <div class="categorias">CATEGORÍAS</div>
 
       <div class="cesta" (click)="this.serviceCesta.toggleAbrirCesta()">
-        <span class="material-symbols-outlined">shopping_cart</span>
-        <span class="texto">CESTA</span>
+        <div class="icono-cesta">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <div class="unidades-carrito" *ngIf="this.serviceCesta.getTotalUnidades() > 0">
+            {{ this.serviceCesta.getTotalUnidades() }}
+          </div>
+        </div>
+        <div class="texto">CESTA</div>
       </div>      
     </div>
 

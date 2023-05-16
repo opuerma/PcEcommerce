@@ -34,7 +34,7 @@ const cambioColor = trigger('cambioColor', [
 })
 export class CestaComponent {
   @ViewChild('fondo', { static: true }) fondo!: ElementRef;
-  articulosCesta: Producto[] = [];
+  articulosCesta: { producto: Producto, cantidad: number }[] = [];
   state: string = 'start';
   isAnimationDone: boolean = false;
 
@@ -43,17 +43,6 @@ export class CestaComponent {
     public serviceFunciones: FuncionesGeneralesService
   ) {
     this.articulosCesta = this.serviceCesta.getArticulosCesta();
-  }
-
-
-  getPrecioTotal(): string {
-    let precioTotal = 0;
-
-    for (const producto of this.articulosCesta) {
-      precioTotal += producto.precioFinal;
-    }
-
-    return this.serviceFunciones.formatearNumero(precioTotal);
   }
 
 

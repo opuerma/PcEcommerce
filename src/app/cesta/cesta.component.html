@@ -15,28 +15,28 @@
 
         <div class="contenido" *ngIf="this.articulosCesta.length">
             <div class="productos-container">
-                <div class="carta-producto" *ngFor="let producto of articulosCesta">
+                <div class="carta-producto" *ngFor="let item of articulosCesta">
                     <div class="producto">
                         <div class="imagen">
-                            <img src="../../assets/img/categorias/{{producto.categoria}}/{{producto.nombreImagen}}.jpg" alt="">
+                            <img src="../../assets/img/categorias/{{item.producto.categoria}}/{{item.producto.nombreImagen}}.jpg" alt="">
                         </div>
                         <div class="descripcion">
-                            <div class="nombre item-descripcion">{{ producto.nombre }}</div>
-                            <div class="unidades item-descripcion">Unidades 1</div>
-                            <div class="precio item-descripcion">{{ this.serviceFunciones.formatearNumero(producto.precioFinal) }}€</div>
+                            <div class="nombre item-descripcion">{{ item.producto.nombre }}</div>
+                            <div class="unidades item-descripcion">Unidades {{ item.cantidad }}</div>
+                            <div class="precio item-descripcion">{{ this.serviceFunciones.formatearNumero(item.producto.precioFinal) }}€</div>
                         </div>
                         <div class="eliminar">
-                            <span class="material-symbols-outlined" (click)="this.serviceCesta.deleteCesta()">close</span>
+                            <span class="material-symbols-outlined" (click)="this.serviceCesta.deleteProducto(item.producto)">close</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="linea"></div>
             <div class="total-unidades">
-                <div>Unidades</div><div>{{ articulosCesta.length }}</div>
+                <div>Unidades</div><div>{{ this.serviceCesta.getTotalUnidades() }}</div>
             </div>
             <div class="total-precio">
-                <div>Total <span>(IVA incluido)</span></div><div>{{ getPrecioTotal() }}€</div>
+                <div>Total <span>(IVA incluido)</span></div><div>{{ this.serviceCesta.getPrecioTotal() }}€</div>
             </div>
             <div class="boton boton-cesta">Comprar</div>
         </div>

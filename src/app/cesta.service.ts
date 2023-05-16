@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Producto } from './Producto';
 import { CookieService } from 'ngx-cookie-service';
+import { FuncionesGeneralesService } from './funciones-generales.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CestaService {
   cestaAbierta: boolean = false;
-  articulosCesta: Producto[] = [];
+  articulosCesta: { producto: Producto, cantidad: number }[] = [];
 
-  constructor(private serviceCookies: CookieService) {
+  constructor(private serviceCookies: CookieService, private serviceFunciones: FuncionesGeneralesService) {
     if (this.serviceCookies.check('cesta')) {
       this.articulosCesta = JSON.parse(this.serviceCookies.get('cesta'));
-    }    
+    }
   }
 
 
@@ -26,12 +27,18 @@ export class CestaService {
 
 
   addArticuloCesta(producto: Producto): void {
-    this.articulosCesta.push(producto);
-    this.serviceCookies.delete('cesta');
+    const productoExistente = this.articulosCesta.find(item => item.producto.id === producto.id);
+    if (productoExistente) {
+      productoExistente.cantidad++;
+    } else {
+      this.articulosCesta.push({ producto: producto, cantidad: 1 });
+    }
+
     this.serviceCookies.set('cesta', JSON.stringify(this.articulosCesta));
   }
 
-  getArticulosCesta(): Producto[] {
+  
+  getArticulosCesta(): { producto: Producto, cantidad: number }[] {
     if (this.serviceCookies.check('cesta')) {
       this.articulosCesta = JSON.parse(this.serviceCookies.get('cesta'));
       return this.articulosCesta;
@@ -40,11 +47,33 @@ export class CestaService {
     return this.articulosCesta;
   }
 
-  deleteCesta() {
-    this.serviceCookies.delete('cesta');
-    this.articulosCesta = [];
-    console.log('Eliminados todos los productos de la cesta.');
+
+  deleteProducto(producto: Producto) {
+    const indice = this.articulosCesta.findIndex(item => item.producto.id === producto.id);
+    if (indice !== -1) {
+      this.articulosCesta.splice(indice, 1);
+      this.serviceCookies.set('cesta', JSON.stringify(this.articulosCesta));
+    }
   }
+
+
+  getTotalUnidades(): number {
+    let totalUnidades = 0;
+    for (const item of this.articulosCesta) {
+      totalUnidades += item.cantidad;
+    }
+    return totalUnidades;
+  }
+  
+
+  getPrecioTotal(): string {
+    let precioTotal = 0;
+    for (const item of this.articulosCesta) {
+      precioTotal += item.producto.precioFinal * item.cantidad;
+    }
+    return this.serviceFunciones.formatearNumero(precioTotal);
+  }
+  
 
 
 }
