@@ -38,6 +38,10 @@ app-cesta {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 
     img {
         width: 100%;
@@ -51,6 +55,10 @@ app-cesta {
     justify-content: center;
     align-items: center;
     color: black;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 
     .categorias {
         margin-right: 30px;
