@@ -26,7 +26,8 @@
                                 <span>-{{ producto.descuento }}%</span>
                             </div>
                             <div class="imagen">
-                                <img src="../../../assets/img/categorias/{{ producto.categoria }}/{{ producto.nombreImagen }}.jpg" alt="">
+                                <div [hidden]="!imageLoader">Loading...</div>
+                                <img [hidden]="imageLoader" src="../../../assets/img/categorias/{{ producto.categoria }}/{{ producto.nombreImagen }}.jpg" alt="" (load)="this.imageLoader = false;">
                             </div>
                             <div class="nombre">
                                 <span>{{ producto.nombre }}</span>
