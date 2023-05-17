@@ -1,15 +1,11 @@
 <div class="intro-container">
     <div class="intro container">
 
-        <div class="anuncio">
-            PUBLICIDAD
-        </div>
-
         <div class="categorias">
-            <div class="carta" *ngFor="let categoria of categorias">
+            <div class="carta" *ngFor="let categoria of categorias" [routerLink]="['categorias']">
                 <div class="content-carta">
                     <div class="imagen-carta">
-                        <img src="../../../assets/img/categorias/smartphone.png" alt="">
+                        <img src="../../../assets/img/categorias/{{ categoria }}/portada.png" alt="">
                     </div>
                     <div class="nombre-carta">{{ categoria }}</div>
                 </div>

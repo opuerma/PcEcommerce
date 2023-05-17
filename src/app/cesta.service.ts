@@ -9,11 +9,16 @@ import { FuncionesGeneralesService } from './funciones-generales.service';
 export class CestaService {
   cestaAbierta: boolean = false;
   articulosCesta: { producto: Producto, cantidad: number }[] = [];
+  fechaActual = new Date();
+  fechaMasUnaSemana = new Date();
+  unaSemanaEnMilisegundos = 7 * 24 * 60 * 60 * 1000;
 
   constructor(private serviceCookies: CookieService, private serviceFunciones: FuncionesGeneralesService) {
     if (this.serviceCookies.check('cesta')) {
       this.articulosCesta = JSON.parse(this.serviceCookies.get('cesta'));
     }
+
+    this.fechaMasUnaSemana = new Date(this.fechaActual.getTime() + this.unaSemanaEnMilisegundos);
   }
 
 
@@ -34,7 +39,7 @@ export class CestaService {
       this.articulosCesta.push({ producto: producto, cantidad: 1 });
     }
 
-    this.serviceCookies.set('cesta', JSON.stringify(this.articulosCesta));
+    this.serviceCookies.set('cesta', JSON.stringify(this.articulosCesta), {expires: this.fechaMasUnaSemana, path: '/'});
   }
 
   
@@ -42,7 +47,7 @@ export class CestaService {
     if (this.serviceCookies.check('cesta')) {
       this.articulosCesta = JSON.parse(this.serviceCookies.get('cesta'));
       return this.articulosCesta;
-    } 
+    }
 
     return this.articulosCesta;
   }
@@ -52,7 +57,7 @@ export class CestaService {
     const indice = this.articulosCesta.findIndex(item => item.producto.id === producto.id);
     if (indice !== -1) {
       this.articulosCesta.splice(indice, 1);
-      this.serviceCookies.set('cesta', JSON.stringify(this.articulosCesta));
+      this.serviceCookies.set('cesta', JSON.stringify(this.articulosCesta), {expires: this.fechaMasUnaSemana, path: '/'});
     }
   }
 

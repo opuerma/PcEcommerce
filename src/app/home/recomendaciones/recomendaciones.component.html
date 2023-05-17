@@ -1,7 +1,7 @@
 <div class="recomendaciones-container">
     <div class="recomendaciones container">
 
-        <div class="h1">Las mejores ofertas en smartphones</div>
+        <div class="h1">{{ this.titulo }}</div>
 
         <div class="productos">
             <carousel 
@@ -17,7 +17,7 @@
                                 <span>-{{ producto.descuento }}%</span>
                             </div>
                             <div class="imagen">
-                                <img src="../../../assets/img/categorias/Smartphones/{{ producto.nombreImagen }}.jpg" alt="">
+                                <img src="../../../assets/img/categorias/{{ producto.categoria }}/{{ producto.nombreImagen }}.jpg" alt="">
                             </div>
                             <div class="nombre">
                                 <span>{{ producto.nombre }}</span>

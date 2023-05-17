@@ -62,13 +62,11 @@ export class ProductoComponent implements OnInit {
 
 
   comprobarCantidadYAnadirCesta(): void {
-    this.serviceCesta.toggleAbrirCesta();
-
     for (let i = 0; i < this.cantidad; i++) {
       this.serviceCesta.addArticuloCesta(this.producto!);
     }
+    this.serviceCesta.toggleAbrirCesta();
   }
-  
 
 
 

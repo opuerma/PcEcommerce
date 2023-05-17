@@ -1,6 +1,11 @@
 @use '../../variables' as v;
 
 
+.recomendaciones-container {
+    margin-top: 50px;
+}
+
+
 .recomendaciones {
     display: flex;
     flex-direction: column;
@@ -11,17 +16,12 @@
 
 .h1 {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 
 .productos {
     width: 100%;
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: flex-start;
-    //align-items: center;
-    //overflow-x: auto;
 
     .carta {
         width: 100%; // 100% porqué lo modificamos
@@ -33,8 +33,6 @@
         justify-content: center;
         align-items: center;
         font-size: medium;
-        //margin-left: 30px;
-        //&:first-child { margin-left: 0; }
 
         .producto-container {
             width: 90%;

@@ -11,7 +11,6 @@ const categorias: string[] = [
   'Monitores',
   'Auriculares',
   'Televisores',
-  'Periféricos',
   'Impresoras'
 ];
 
@@ -57,6 +56,30 @@ export class ProductosService {
     }
   
     return undefined;
+  }
+
+
+  async getProductosPorCategoria(categoria: string): Promise<Producto[]> {
+    if (this.productos && this.productos.length > 0) {
+      return this.productos.filter(producto => producto.categoria === categoria);
+    } else {
+      const productos = await firstValueFrom(this.http.get<Producto[]>(this._jsonURL));
+      this.productos = productos;
+      
+      return productos.filter(producto => producto.categoria === categoria);
+    }
+  }
+
+
+  async getProductosAleatorios(cantidad: number): Promise<Producto[]> {
+    if (this.productos && this.productos.length > 0) {
+      return this.productos.sort(() => Math.random() - 0.5).slice(0, cantidad);
+    } else {
+      const productos = await firstValueFrom(this.http.get<Producto[]>(this._jsonURL));
+      this.productos = productos;
+      
+      return this.productos.sort(() => Math.random() - 0.5).slice(0, cantidad);
+    }
   }
 
 

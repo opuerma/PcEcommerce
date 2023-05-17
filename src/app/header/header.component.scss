@@ -99,9 +99,9 @@ app-cesta {
     .categorias, .cesta {
         padding: 8px;
         border-radius: v.$border-radius;
+        cursor: pointer;
         
         &:hover {
-            cursor: pointer;
             background-color: v.$color-hover;
         }
     }

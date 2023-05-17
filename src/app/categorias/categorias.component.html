@@ -1,0 +1,23 @@
+
+
+
+<div class="categorias-container">
+
+    <div class="filtros-container">
+        <div class="filtros container">
+            <div class="filtro">
+                Todo
+            </div>
+            <div class="filtro" *ngFor="let categoria of categorias">
+                {{ categoria }}
+            </div>
+        </div>
+    </div>
+
+    <div class="categorias">
+
+        <app-recomendaciones *ngFor="let categoria of categorias" [categoriaAMostrar]="categoria" [titulo]="categoria"></app-recomendaciones>
+        
+    </div>
+</div>
+

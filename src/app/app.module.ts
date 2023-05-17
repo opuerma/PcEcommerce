@@ -23,6 +23,7 @@ import { EstrategiaRouteReuse } from './EstrategiaRouteReuse';
 import { CestaService } from './cesta.service';
 import { FuncionesGeneralesService } from './funciones-generales.service';
 import { ProductosService } from './productos.service';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProductosService } from './productos.service';
     RecomendacionesComponent,
     BlogComponent,
     SorteoComponent,
-    ProductoComponent
+    ProductoComponent,
+    CategoriasComponent
   ],
   imports: [
     AppRoutingModule,
