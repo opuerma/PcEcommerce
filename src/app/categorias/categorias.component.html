@@ -5,10 +5,10 @@
 
     <div class="filtros-container">
         <div class="filtros container">
-            <div class="filtro">
+            <div class="filtro" [routerLink]="['/categorias', 'todo']">
                 Todo
             </div>
-            <div class="filtro" *ngFor="let categoria of categorias">
+            <div class="filtro" *ngFor="let categoria of categorias" [routerLink]="['/categorias', categoria.toLowerCase()]">
                 {{ categoria }}
             </div>
         </div>
@@ -16,7 +16,13 @@
 
     <div class="categorias">
 
-        <app-recomendaciones *ngFor="let categoria of categorias" [categoriaAMostrar]="categoria" [titulo]="categoria"></app-recomendaciones>
+        <div *ngIf="this.mostrarTodo">
+            <app-recomendaciones *ngFor="let categoria of categorias" [categoriaAMostrar]="categoria" [titulo]="categoria"></app-recomendaciones>
+        </div>
+
+        <div *ngIf="!this.mostrarTodo">
+            <app-categoria [categoriaAMostrar]="this.categoriaSeleccionada"></app-categoria>
+        </div>
         
     </div>
 </div>

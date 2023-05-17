@@ -2,7 +2,7 @@
     <div class="intro container">
 
         <div class="categorias">
-            <div class="carta" *ngFor="let categoria of categorias" [routerLink]="['/categorias']">
+            <div class="carta" *ngFor="let categoria of categorias" [routerLink]="['/categorias', categoria.toLowerCase()]">
                 <div class="content-carta">
                     <div class="imagen-carta">
                         <img *ngIf="loading" src="../../../assets/img/loading-naranja-oscuro.gif" alt="cargando" />

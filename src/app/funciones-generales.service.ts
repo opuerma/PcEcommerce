@@ -42,6 +42,12 @@ export class FuncionesGeneralesService {
   getIteraciones(numero: number): number[] {
     return Array(numero).fill(0);
   }
+
+
+  primeraLetraCapital(palabra: string) {
+    if (!palabra) return palabra;
+    return palabra[0].toUpperCase() + palabra.substr(1).toLowerCase();
+  }
     
 
   

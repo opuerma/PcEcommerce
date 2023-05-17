@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosService } from '../productos.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-categorias',
@@ -9,10 +10,20 @@ import { ProductosService } from '../productos.service';
 export class CategoriasComponent implements OnInit {
   
   categorias: string[] = [];
+  categoriaSeleccionada: string = 'todo';
+  mostrarTodo = true;
 
 
-  constructor (public serviceProductos: ProductosService) {
+  constructor (public serviceProductos: ProductosService, private route: ActivatedRoute) {
     this.categorias = this.serviceProductos.getCategorias();
+    this.categoriaSeleccionada = this.route.snapshot.paramMap.get('categoria') ?? 'todo';
+
+    if (this.categoriaSeleccionada.toLowerCase() === 'todo') {
+      this.mostrarTodo = true;
+    }
+    else {
+      this.mostrarTodo = false;
+    }
   }
 
 

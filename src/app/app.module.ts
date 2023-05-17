@@ -24,6 +24,7 @@ import { CestaService } from './cesta.service';
 import { FuncionesGeneralesService } from './funciones-generales.service';
 import { ProductosService } from './productos.service';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
     BlogComponent,
     SorteoComponent,
     ProductoComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    CategoriaComponent
   ],
   imports: [
     AppRoutingModule,
