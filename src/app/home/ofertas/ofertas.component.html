@@ -26,8 +26,8 @@
                                 <span>-{{ producto.descuento }}%</span>
                             </div>
                             <div class="imagen">
-                                <div [hidden]="!imageLoader">Loading...</div>
-                                <img [hidden]="imageLoader" src="../../../assets/img/categorias/{{ producto.categoria }}/{{ producto.nombreImagen }}.jpg" alt="" (load)="this.imageLoader = false;">
+                                <img *ngIf="loading" src="../../../assets/img/loading-blanco.gif" alt="cargando" />
+                                <img [hidden]="loading" (load)="this.loading = false;" src="../../../assets/img/categorias/{{ producto.categoria }}/{{ producto.nombreImagen }}.jpg" alt="">
                             </div>
                             <div class="nombre">
                                 <span>{{ producto.nombre }}</span>

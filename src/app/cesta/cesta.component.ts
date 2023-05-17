@@ -37,6 +37,7 @@ export class CestaComponent {
   articulosCesta: { producto: Producto, cantidad: number }[] = [];
   state: string = 'start';
   isAnimationDone: boolean = false;
+  loading: boolean = true;
 
   constructor (
     public serviceCesta: CestaService,

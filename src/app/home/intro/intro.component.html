@@ -2,10 +2,11 @@
     <div class="intro container">
 
         <div class="categorias">
-            <div class="carta" *ngFor="let categoria of categorias" [routerLink]="['categorias']">
+            <div class="carta" *ngFor="let categoria of categorias" [routerLink]="['/categorias']">
                 <div class="content-carta">
                     <div class="imagen-carta">
-                        <img src="../../../assets/img/categorias/{{ categoria }}/portada.png" alt="">
+                        <img *ngIf="loading" src="../../../assets/img/loading-naranja-oscuro.gif" alt="cargando" />
+                        <img [hidden]="loading" (load)="this.loading = false;" src="../../../assets/img/categorias/{{ categoria }}/portada.png" alt="">
                     </div>
                     <div class="nombre-carta">{{ categoria }}</div>
                 </div>

@@ -7,7 +7,7 @@
     </div>
 
     <div class="botones">
-      <div class="categorias">CATEGORÍAS</div>
+      <div class="categorias" [routerLink]="['/categorias']">CATEGORÍAS</div>
 
       <div class="cesta" (click)="this.serviceCesta.toggleAbrirCesta()">
         <div class="icono-cesta">

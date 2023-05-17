@@ -15,6 +15,7 @@ export class RecomendacionesComponent implements OnInit {
 
   categorias: string[] = [];
   productos: Producto[] = [];
+  loading: boolean = true;
 
 
   constructor(

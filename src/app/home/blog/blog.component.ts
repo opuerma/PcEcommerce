@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
+  loading: boolean = true;
 
   constructor() { }
 

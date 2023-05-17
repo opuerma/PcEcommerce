@@ -120,7 +120,8 @@
 
                 <div class="noticia carousel-cell">
                     <div class="imagen">
-                        <img src="../../../assets/img/blog/blog-moviles.jpg" alt="">
+                        <img *ngIf="loading" src="../../../assets/img/loading-blanco.gif" alt="cargando" />
+                        <img [hidden]="loading" (load)="this.loading = false;" src="../../../assets/img/blog/blog-moviles.jpg" alt="">
                     </div>
                     <div class="contenido-container">
                         <div class="contenido">

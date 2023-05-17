@@ -14,6 +14,7 @@ export class ProductoComponent implements OnInit {
 
   producto: Producto | undefined;
   cantidad: number = 1;
+  loading: boolean = true;
 
 
   constructor(

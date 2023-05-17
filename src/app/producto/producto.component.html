@@ -3,7 +3,8 @@
 
         <div class="producto-actual">
             <div class="imagen">
-                <img src="../../assets/img/categorias/{{this.producto?.categoria}}/{{this.producto?.nombreImagen}}.jpg" alt="{{this.producto?.nombreImagen}}">
+                <img *ngIf="loading" src="../../assets/img/loading-blanco.gif" alt="cargando" />
+                <img [hidden]="loading" (load)="this.loading = false;" src="../../assets/img/categorias/{{this.producto?.categoria}}/{{this.producto?.nombreImagen}}.jpg" alt="{{this.producto?.nombreImagen}}">
             </div>
             <div class="descripcion">
 

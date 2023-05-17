@@ -11,7 +11,7 @@ import { ProductosService } from 'src/app/productos.service';
 export class OfertasComponent implements OnInit {
 
   productosEnOferta: Producto[] = [];
-  imageLoader: boolean = true;
+  loading: boolean = true;
 
 
   constructor(public serviceProductos: ProductosService, public serviceFunciones: FuncionesGeneralesService) { }

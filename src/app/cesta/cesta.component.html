@@ -48,7 +48,8 @@
 
         <div class="cesta-vacia" *ngIf="!this.articulosCesta.length">
             <div class="cesta-vacia-img">
-                <img src="../../assets/img/empty-cart.png" alt="">
+                <img *ngIf="loading" src="../../assets/img/loading-blanco.gif" alt="cargando" />
+                <img [hidden]="loading" (load)="this.loading = false;" src="../../assets/img/empty-cart.png" alt="">
             </div>
             <div class="texto">
                 <span>Tu carrito está vacío</span>
