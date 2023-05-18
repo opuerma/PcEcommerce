@@ -286,5 +286,65 @@
         "cantidadValoraciones": 121,
         "nombreImagen": "Brother HL-L3270CDW",
         "descripcion": "La impresora de color digital Brother HL-L3270CDW con impresión dúplex es perfecta para oficinas domésticas o pequeñas. Conéctese con las interfaces inalámbricas, Ethernet o USB integradas. Imprima de forma inalámbrica desde dispositivos móviles. Bandeja con capacidad para hasta 250 hojas y ranura de alimentación manual."
+    },
+    {
+        "id": 24,
+        "nombre": "HP Color LaserJet Pro M255dw Impresora Láser WiFi Color",
+        "categoria": "Impresoras",
+        "precioFinal": 370.99,
+        "precioOriginal": 409.90,
+        "descuento": 9,
+        "estrellitas": 4.5,
+        "cantidadValoraciones": 37,
+        "nombreImagen": "HP Color LaserJet Pro M255dw",
+        "descripcion": "Con la impresora HP Color LaserJet Pro M255dw tendrás una extraordinaria impresión inalámbrica, impresiona con el color y aumenta la eficiencia. Obtén colores de alta calidad y rápidas velocidades de impresión a doble cara, ahorra tiempo con los accesos directos de Smart Task en la aplicación HP Smart e imprime y escanea desde tu teléfono."
+    },
+    {
+        "id": 25,
+        "nombre": "Canon PIXMA TS305 Impresora Wifi",
+        "categoria": "Impresoras",
+        "precioFinal": 51.98,
+        "precioOriginal": 54,
+        "descuento": 3,
+        "estrellitas": 4,
+        "cantidadValoraciones": 79,
+        "nombreImagen": "Canon PIXMA TS305",
+        "descripcion": "Imprime cómodamente de forma inalámbrica desde tus dispositivos inteligentes y desde la nube gracias a la conectividad Bluetooth, la aplicación Canon PRINT y la compatibilidad con Apple AirPrint/Mopria."
+    },
+    {
+        "id": 26,
+        "nombre": "HP LaserJet M209dwe Impresora Láser WIFI Monocromo",
+        "categoria": "Impresoras",
+        "precioFinal": 126.99,
+        "precioOriginal": 159.90,
+        "descuento": 20,
+        "estrellitas": 4.5,
+        "cantidadValoraciones": 47,
+        "nombreImagen": "HP LaserJet M209dwe",
+        "descripcion": "Una impresora láser monocromo compacta y de alta calidad con la impresión a doble cara más rápida de su categoría y la aplicación HP Smart que ahorra tiempo.Incluye HP+, la solución de impresión más sencilla de HP, más valor añadido con el uso exclusivo del tóner Original HP."
+    },
+    {
+        "id": 27,
+        "nombre": "Canon Impresora Pixma TS205 Negra",
+        "categoria": "Impresoras",
+        "precioFinal": 44.99,
+        "precioOriginal": 49.99,
+        "descuento": 10,
+        "estrellitas": 4,
+        "cantidadValoraciones": 112,
+        "nombreImagen": "Canon Impresora Pixma TS205",
+        "descripcion": "Impresora de casa compacta, sencilla y asequible para obtener impresiones cómodas y de alta calidad de nítidos documentos e intensas fotos de 4x6\", con un diseño compacto y elegante y una sencilla conectividad USB."
+    },
+    {
+        "id": 28,
+        "nombre": "HP Officejet Pro 8210 Impresora Color WiFi Dúplex",
+        "categoria": "Impresoras",
+        "precioFinal": 149.99,
+        "precioOriginal": 119.99,
+        "descuento": 20,
+        "estrellitas": 4.5,
+        "cantidadValoraciones": 164,
+        "nombreImagen": "HP Officejet Pro 8210",
+        "descripcion": "Controle los costes y las prácticas de impresión con un color asequible y una gestión integral de toda la flota. Imprima en color con calidad profesional y obtenga funciones de gestión de impresión perfecta. Aumente la eficiencia con una gran variedad de opciones de impresión móvil."
     }
 ]
