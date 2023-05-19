@@ -394,5 +394,17 @@
         "cantidadValoraciones": 190,
         "nombreImagen": "TCL 32S615",
         "descripcion": "La serie S61 combina un diseño fino y contemporáneo, calidad de imagen HDR y el sistema Smart TV más avanzado que existe: Android TV. Diseñada para aquellos que no quieren tener que elegir entre elegancia, calidad de imagen y fácil acceso al contenido que más les gusta."
+    },
+    {
+        "id": 33,
+        "nombre": "TCL 32S615 32\" LED HD HDR10",
+        "categoria": "Televisores",
+        "precioFinal": 169.98,
+        "precioOriginal": 199,
+        "descuento": 14,
+        "estrellitas": 4,
+        "cantidadValoraciones": 190,
+        "nombreImagen": "TCL 32S615",
+        "descripcion": "La serie S61 combina un diseño fino y contemporáneo, calidad de imagen HDR y el sistema Smart TV más avanzado que existe: Android TV. Diseñada para aquellos que no quieren tener que elegir entre elegancia, calidad de imagen y fácil acceso al contenido que más les gusta."
     }
 ]
