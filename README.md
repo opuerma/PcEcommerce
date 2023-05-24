@@ -5,8 +5,7 @@
 
 ## Sobre el proyecto
 
-Página web que simula un ecommerce de productos electrónicos. El usuario puede navegar por la web de forma sencilla y con un diseño responsive. Se puede buscar y comparar multitud de productos e incluso tiene sistema de cesta funcional.
-Diseño: [PcComponentes](https://www.pccomponentes.com/)
+Página web que simula un ecommerce de productos electrónicos. El usuario puede navegar por la web de forma sencilla y con un diseño responsive. Se puede buscar y comparar multitud de productos e incluso tiene sistema de cesta funcional. Diseño: [PcComponentes](https://www.pccomponentes.com/)
 
 👉 Demo: [PcEcommerce](https://pc-ecommerce.vercel.app/)
 
