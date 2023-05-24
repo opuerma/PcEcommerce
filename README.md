@@ -1,5 +1,5 @@
 <div>
-  <img src="/src/assets/img/logo.png" align="left">
+  <img src="/src/assets/img/logo.png" align="left" width="79" height="50">
   <h1>PcEcommerce</h1>
 </div>
 
