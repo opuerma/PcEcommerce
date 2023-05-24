@@ -1,0 +1,128 @@
+@use '../variables' as v;
+
+
+.fondo {
+    background-color: rgba(0, 0, 0, 0.145);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: cambioColor;
+    animation-duration: 0.3s;
+}
+
+@keyframes cambioColor {
+    from {background-color: rgba(0, 0, 0, 0);}
+    to {background-color: rgba(0, 0, 0, 0.145)}
+}
+
+
+.menu {
+    background-color: white;
+    box-shadow: 0 6px 8px 0 #00000033, 0 8px 20px 0 #00000030;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: leftToRight 0.3s ease-out;
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translateX(-450px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.menu-container {
+    outline: 1px dashed black;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: v.$border-radius;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: v.$color-hover;
+    }
+}
+
+
+.titulo {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .categoria {
+        padding: 8px;
+        border-radius: v.$border-radius;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: v.$color-hover;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-height: 450px) {
+    .titulo {
+        margin-top: 20px;
+    }
+    .menu-container {
+        justify-content: flex-start;
+        overflow: auto;
+    }
+}

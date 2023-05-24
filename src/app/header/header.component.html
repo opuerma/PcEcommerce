@@ -2,8 +2,13 @@
 <div class="header-container">
   <div class="header container">
 
-    <div class="logo" routerLink="">
-      <img src="../../assets/img/logo.png" alt="">
+    <div class="logo">
+      <div class="menu" (click)="this.serviceFunciones.toggleAbrirMenu()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <div class="img-logo" routerLink="">
+        <img src="../../assets/img/logo.png" alt="">
+      </div>
     </div>
 
     <div class="botones">
@@ -23,4 +28,6 @@
   </div>
 </div>
 
+
+<app-menu-movil *ngIf="this.serviceFunciones.getMenuAbierto()"></app-menu-movil>
 <app-cesta *ngIf="this.serviceCesta.getCestaAbierta()"></app-cesta>

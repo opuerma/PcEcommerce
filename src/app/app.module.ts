@@ -25,6 +25,7 @@ import { FuncionesGeneralesService } from './funciones-generales.service';
 import { ProductosService } from './productos.service';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { MenuMovilComponent } from './menu-movil/menu-movil.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CategoriaComponent } from './categoria/categoria.component';
     SorteoComponent,
     ProductoComponent,
     CategoriasComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    MenuMovilComponent
   ],
   imports: [
     AppRoutingModule,

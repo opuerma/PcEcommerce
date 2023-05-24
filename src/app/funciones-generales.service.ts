@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FuncionesGeneralesService {
+  menuAbierto: boolean = false;
 
   constructor() { }
 
@@ -47,6 +48,15 @@ export class FuncionesGeneralesService {
   primeraLetraCapital(palabra: string) {
     if (!palabra) return palabra;
     return palabra[0].toUpperCase() + palabra.substr(1).toLowerCase();
+  }
+
+
+  toggleAbrirMenu(): void {
+    this.menuAbierto = !this.menuAbierto;
+  }
+
+  getMenuAbierto(): boolean {
+    return this.menuAbierto;
   }
     
 

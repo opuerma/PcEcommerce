@@ -1,0 +1,28 @@
+<div class="fondo" (click)="animacionCerrarMenu()" [@cambioColor]="state">
+
+</div>
+
+<div class="menu" [@rightToLeft]="state" (@rightToLeft.done)="onAnimationDone($event)">
+
+    <div class="menu-container">
+
+        <div class="cerrar" (click)="animacionCerrarMenu()">
+            <span class="material-symbols-outlined">close</span>
+        </div>
+
+        <div class="titulo">CATEGORÍAS</div>
+        
+        <div class="categorias">
+            <div class="categoria" [routerLink]="['/categorias', 'todo']" (click)="animacionCerrarMenu()">
+                Ver todo
+            </div>
+            <div class="categoria" *ngFor="let categoria of categorias" [routerLink]="['/categorias', categoria.toLowerCase()]" (click)="animacionCerrarMenu()">
+                {{ categoria }}
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CestaService } from '../cesta.service';
+import { FuncionesGeneralesService } from '../funciones-generales.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,6 @@ import { CestaService } from '../cesta.service';
 })
 export class HeaderComponent {
 
-  constructor (public serviceCesta: CestaService) { }
+  constructor (public serviceCesta: CestaService, public serviceFunciones: FuncionesGeneralesService) { }
 
 }

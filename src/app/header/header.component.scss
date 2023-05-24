@@ -1,7 +1,7 @@
 @use '../variables' as v;
 
 
-app-cesta {
+app-cesta, app-menu-movil {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -33,19 +33,46 @@ app-cesta {
 
 .logo {
     position: sticky;
-    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     -webkit-user-select: none;  
     -moz-user-select: none;    
     -ms-user-select: none;      
     user-select: none;
 
-    img {
-        width: 100%;
+    .menu {
+        display: none;
+        visibility: hidden;
+        margin-right: 20px;
+
+        .material-symbols-outlined {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
     }
+
+    .img-logo {
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    
 }
 
 
@@ -95,15 +122,15 @@ app-cesta {
             padding-left: 5px;
         }
     }
+}
 
-    .categorias, .cesta {
-        padding: 8px;
-        border-radius: v.$border-radius;
-        cursor: pointer;
-        
-        &:hover {
-            background-color: v.$color-hover;
-        }
+.categorias, .cesta, .menu {
+    padding: 8px;
+    border-radius: v.$border-radius;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: v.$color-hover;
     }
 }
 
@@ -115,8 +142,25 @@ app-cesta {
     }
 }
 
+
+@media only screen and (max-width: 800px) {
+    .categorias {
+        display: none;
+        visibility: hidden;
+    }
+    .menu {
+        visibility: visible !important;
+        display: block !important;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .categorias {
         margin-right: 10px !important;
+    }
+    .cesta .texto {
+        display: none;
+        visibility: hidden;
     }
 }
