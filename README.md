@@ -17,4 +17,16 @@ Página web que simula un ecommerce de productos electrónicos. El usuario puede
 
 ## Inicio
 
-![Página principal](/src/assets/img/loading-blanco.gif "Página principal")
+![Página principal](/src/assets/img/capturas-pantalla/home-ss.jpeg "Página principal")
+
+## Categorías
+
+![Página categorías](/src/assets/img/capturas-pantalla/categorias-ss.jpeg "Página categorías")
+
+## Producto
+
+![Página producto](/src/assets/img/capturas-pantalla/producto-ss.jpeg "Página producto")
+
+## Cesta
+
+![Cesta](/src/assets/img/capturas-pantalla/cesta-ss.jpeg "Cesta")
