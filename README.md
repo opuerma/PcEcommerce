@@ -5,7 +5,8 @@
 
 ## Sobre el proyecto
 
-Página web de alquiler de coches eléctricos que permite a los usuarios alquilar coches para uso personal o comercial. La web tiene una interfaz fácil de usar para buscar, comparar y reservar coches que varían en marca, modelo, tamaño y precio. También pretende concienciar al consumidor sobre el medioambiente.
+Página web que simula un ecommerce de productos electrónicos. El usuario puede navegar por la web de forma sencilla y con un diseño responsive. Se puede buscar y comparar multitud de productos e incluso tiene sistema de cesta funcional.
+Diseño: [PcComponentes](https://www.pccomponentes.com/)
 
 👉 Demo: [PcEcommerce](https://pc-ecommerce.vercel.app/)
 
