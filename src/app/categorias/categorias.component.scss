@@ -37,3 +37,26 @@
 .categorias {
     margin-top: 50px;
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+    .filtros {
+        justify-content: space-between !important;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .filtro {
+        font-size: small;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .filtros-container {
+        display: none;
+        visibility: hidden;
+    }
+}
