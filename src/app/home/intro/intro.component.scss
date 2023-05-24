@@ -15,16 +15,18 @@
 }
 
 
-.anuncio {
+.publi {
     width: 100%;
-    height: 250px;
-    background-color: v.$color-naranja-hover;
+    cursor: pointer;
 
-    display: flex;          // *****
-    justify-content: center;//
-    align-items: center;    // Borrar
-    font-size: xx-large;    //
-    font-weight: bold;      // *****
+    img {
+        width: 100%;
+    }
+
+    .pequena {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 
@@ -106,6 +108,14 @@
         grid-template-columns: auto auto;
         justify-content: center;
         column-gap: 50px;
+    }
+    .publi .grande {
+        display: none;
+        visibility: hidden;
+    }
+    .publi .pequena {
+        display: block;
+        visibility: visible;
     }
 }
 

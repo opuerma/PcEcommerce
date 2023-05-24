@@ -1,6 +1,11 @@
 <div class="intro-container">
     <div class="intro container">
 
+        <div class="publi" [routerLink]="['/categorias', 'todo']">
+            <img class="grande" src="../../../assets/img/publi-grande.webp" alt="">
+            <img class="pequena" src="../../../assets/img/publi-pequena.webp" alt="">
+        </div>
+
         <div class="categorias">
             <div class="carta" *ngFor="let categoria of categorias" [routerLink]="['/categorias', categoria.toLowerCase()]">
                 <div class="content-carta">
