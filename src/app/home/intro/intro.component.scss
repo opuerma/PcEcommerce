@@ -15,7 +15,7 @@
 }
 
 
-.publi {
+.img-intro {
     width: 100%;
     cursor: pointer;
 
@@ -113,11 +113,11 @@
         justify-content: center;
         column-gap: 50px;
     }
-    .publi .grande {
+    .img-intro .grande {
         display: none;
         visibility: hidden;
     }
-    .publi .pequena {
+    .img-intro .pequena {
         display: block;
         visibility: visible;
     }
